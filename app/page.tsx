@@ -1,4 +1,5 @@
 import type { CSSProperties } from "react";
+import { AuthButton } from "@/components/AuthButton";
 
 const DEBUG_HOTSPOTS = false;
 
@@ -94,13 +95,7 @@ export default function Home() {
           </a>
         </div>
 
-        <button
-          type="button"
-          data-auth-provider="supabase"
-          className="rounded-full border border-white/30 bg-white/8 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white shadow-[0_0_24px_rgba(135,198,255,0.18)] backdrop-blur-md transition hover:border-white/65 hover:bg-white/16 focus:outline-none focus:ring-2 focus:ring-cyan-200/70 sm:px-5 sm:text-sm"
-        >
-          Connexion
-        </button>
+        <AuthButton />
       </nav>
 
       <section
